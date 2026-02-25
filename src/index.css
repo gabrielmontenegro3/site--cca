@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --color-bg: #F8FAFC;
+  --color-primary: #137FEC;
+  --color-secondary: #0F172A;
+  --color-text: #1e293b;
+  --radius: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+}
