@@ -14,26 +14,15 @@ export function SiteToggle({ mode, onModeChange }: SiteToggleProps) {
       role="tablist"
       aria-label="Alternar modo do site"
     >
-      {/* Pill deslizante - animação ao clicar */}
+      {/* Pill deslizante - animação ao clicar (esquerda = Institucional, direita = Industrial) */}
       <div
         className="absolute top-1.5 bottom-1.5 rounded-full bg-[#137FEC] shadow-[0_1px_3px_rgba(19,127,236,0.35)] transition-[left] duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
         style={{
           width: 'calc(50% - 6px)',
-          left: isIndustrial ? 6 : 'calc(50% + 3px)',
+          left: isIndustrial ? 'calc(50% + 3px)' : 6,
         }}
         aria-hidden
       />
-      <button
-        type="button"
-        role="tab"
-        aria-selected={isIndustrial}
-        onClick={() => onModeChange('industrial')}
-        className={`relative z-10 min-w-[140px] flex-1 rounded-full px-4 py-2.5 text-sm font-medium transition-colors duration-200 active:scale-[0.98] sm:min-w-[160px] ${
-          isIndustrial ? 'text-white' : 'text-slate-500 hover:text-slate-800'
-        }`}
-      >
-        Atuação Industrial
-      </button>
       <button
         type="button"
         role="tab"
@@ -44,6 +33,17 @@ export function SiteToggle({ mode, onModeChange }: SiteToggleProps) {
         }`}
       >
         Site Institucional
+      </button>
+      <button
+        type="button"
+        role="tab"
+        aria-selected={isIndustrial}
+        onClick={() => onModeChange('industrial')}
+        className={`relative z-10 min-w-[140px] flex-1 rounded-full px-4 py-2.5 text-sm font-medium transition-colors duration-200 active:scale-[0.98] sm:min-w-[160px] ${
+          isIndustrial ? 'text-white' : 'text-slate-500 hover:text-slate-800'
+        }`}
+      >
+        Atuação Industrial
       </button>
     </div>
   )

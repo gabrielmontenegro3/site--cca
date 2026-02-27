@@ -24,6 +24,7 @@ import { Contato } from './components/Contato'
 type SiteMode = 'industrial' | 'institucional'
 
 function App() {
+  // Ao entrar no site, a tela exibida é sempre Site Institucional
   const [siteMode, setSiteMode] = useState<SiteMode>('institucional')
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
