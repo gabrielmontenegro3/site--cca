@@ -9,7 +9,7 @@ import { OndeAtuamos } from './components/OndeAtuamos'
 import { TresGestoes } from './components/TresGestoes'
 import { Metodologia } from './components/Metodologia'
 import { Plataforma } from './components/Plataforma'
-import { EmpresasAcreditam } from './components/EmpresasAcreditam'
+import { Parceiros } from './components/Parceiros'
 import { ContextoAtivo } from './components/ContextoAtivo'
 import { Inspecao } from './components/Inspecao'
 import { Diagnostico } from './components/Diagnostico'
@@ -60,7 +60,7 @@ function App() {
               <TresGestoes />
               <Metodologia />
               <Plataforma />
-              <EmpresasAcreditam />
+              <Parceiros />
               <Contato />
             </>
           )}
