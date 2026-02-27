@@ -21,7 +21,7 @@ const features = [
 export function Governanca() {
   return (
     <section id="governanca" className="bg-[#0F172A] py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">

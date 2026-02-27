@@ -17,3 +17,34 @@ body {
   font-family: var(--font-sans);
   background-color: var(--color-bg);
 }
+
+/* Animação de transição ao trocar de site (industrial ↔ institucional) */
+@keyframes site-content-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes site-content-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+.site-content-enter {
+  animation: site-content-in 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.site-content-exit {
+  animation: site-content-out 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}

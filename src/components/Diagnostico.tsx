@@ -20,7 +20,7 @@ const cards = [
 export function Diagnostico() {
   return (
     <section id="diagnostico" className="bg-[#F7F9FA] py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <h2 className="mb-16 text-center text-3xl font-bold text-slate-800">
           Diagnóstico
         </h2>

@@ -3,7 +3,7 @@ import logoUrl from '../assets/logo cca collor (1).png'
 export function Footer() {
   return (
     <footer className="border-t border-slate-200/80 bg-[#0F172A] py-10">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-[1600px] flex-wrap items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
         <a href="#" className="block">
           <img
             src={logoUrl}

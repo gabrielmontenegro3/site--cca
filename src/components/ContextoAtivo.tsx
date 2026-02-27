@@ -40,7 +40,7 @@ const cards = [
 export function ContextoAtivo() {
   return (
     <section id="contexto" className="bg-[#F8FAFC] py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <div className="grid items-start gap-16 lg:grid-cols-2">
           <div className="grid grid-cols-2 gap-4">
             {cards.map((card) => (

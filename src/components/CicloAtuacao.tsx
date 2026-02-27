@@ -24,7 +24,7 @@ const steps = [
 export function CicloAtuacao() {
   return (
     <section id="ciclo" className="bg-[#F8FAFC] py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-3xl font-bold tracking-tight text-[#1e293b] md:text-4xl">
           O Ciclo de Atuação
         </h2>
