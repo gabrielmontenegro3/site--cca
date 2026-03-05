@@ -30,7 +30,7 @@ export function Contato() {
               </span>
               <div>
                 <p className="text-sm font-medium text-slate-500">E-mail</p>
-                <p className="font-semibold">contato@ccaengenharia.com.br</p>
+                <p className="font-semibold">contato@cca-engenharia.com.br</p>
               </div>
             </a>
             <div className="flex items-center gap-4 text-[#1e293b]">
