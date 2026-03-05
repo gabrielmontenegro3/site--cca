@@ -23,16 +23,16 @@ export function Parceiros() {
         <p className="mx-auto mt-4 max-w-xl text-center text-[#1e293b]/80">
           Empresas que confiam na CCA para governança técnica do ativo construído.
         </p>
-        <div className="mt-16 grid grid-cols-2 place-items-center gap-8 rounded-[8px] border border-slate-200/80 bg-white p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-12 lg:p-12">
+        <div className="mt-16 mx-auto max-w-4xl grid grid-cols-2 place-items-center gap-6 rounded-[8px] border border-slate-200/80 bg-white p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)] sm:grid-cols-3 md:grid-cols-4 lg:gap-8 lg:p-10">
           {parceiros.map((parceiro) => (
             <div
               key={parceiro.src}
-              className="flex h-24 w-full items-center justify-center p-4 transition hover:opacity-100 sm:h-28 lg:h-32"
+              className="flex h-20 w-full items-center justify-center p-3 sm:h-24 lg:h-28"
             >
               <img
                 src={parceiro.src}
                 alt={parceiro.alt}
-                className="max-h-full w-full object-contain object-center opacity-80 grayscale transition duration-200 hover:grayscale-0 hover:opacity-100"
+                className="max-h-full max-w-[120px] w-full object-contain object-center transition duration-200 hover:opacity-90"
               />
             </div>
           ))}

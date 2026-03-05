@@ -22,7 +22,7 @@ export function Contato() {
               </div>
             </a>
             <a
-              href="mailto:contato@ccaengenharia.com.br"
+              href="mailto:contato@cca-engenharia.com.br"
               className="flex items-center gap-4 text-[#1e293b] transition hover:text-[#137FEC]"
             >
               <span className="flex h-12 w-12 items-center justify-center rounded-[8px] bg-[#137FEC]/10">
