@@ -41,7 +41,7 @@ export function OndeAtuamos() {
           Onde a CCA Atua
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-[#1e293b]/80">
-          Atuação aplicada às fases de produção, garantia e operação do ativo — desde a obra até indústria em operação.
+          Atuação aplicada às fases de produção, garantia e operação do ativo - desde a obra até indústria em operação.
         </p>
         <div className="mt-16 space-y-10">
           {contextos.map((ctx) => (
@@ -53,7 +53,7 @@ export function OndeAtuamos() {
                 <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[8px] bg-[#137FEC]">
                   <ctx.icon className="h-7 w-7 text-white" />
                 </div>
-                <div className="min-w-0 flex-1">
+                <div className="min-w-0 flex-1 text-left md:text-justify">
                   <h3 className="text-xl font-bold text-[#1e293b]">{ctx.title}</h3>
                   {ctx.subtitle && (
                     <p className="mt-1 text-sm text-[#137FEC] font-medium">{ctx.subtitle}</p>

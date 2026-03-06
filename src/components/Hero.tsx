@@ -34,17 +34,17 @@ export function Hero() {
                 </li>
               ))}
             </ul>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-nowrap gap-3 md:flex-wrap md:gap-4">
               <a
                 href="#metodologia"
-                className="inline-flex items-center gap-2 rounded-[8px] bg-[#137FEC] px-8 py-4 font-semibold text-white shadow-[0_2px_12px_rgba(19,127,236,0.35)] transition hover:opacity-90"
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-[8px] bg-[#137FEC] px-4 py-3 text-sm font-semibold text-white shadow-[0_2px_12px_rgba(19,127,236,0.35)] transition hover:opacity-90 md:gap-2 md:px-8 md:py-4 md:text-base"
               >
                 Conhecer Metodologia
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
               </a>
               <a
                 href="#contato"
-                className="inline-flex items-center gap-2 rounded-[8px] border border-slate-200/80 bg-white px-8 py-4 font-semibold text-[#137FEC] shadow-[0_2px_8px_rgba(0,0,0,0.04)] transition hover:bg-slate-50"
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-[8px] border border-slate-200/80 bg-white px-4 py-3 text-sm font-semibold text-[#137FEC] shadow-[0_2px_8px_rgba(0,0,0,0.04)] transition hover:bg-slate-50 md:gap-2 md:px-8 md:py-4 md:text-base"
               >
                 Acessar Plataforma
               </a>
