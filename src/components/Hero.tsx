@@ -1,4 +1,5 @@
 import { ArrowRight, Layout, Shield, Building2 } from 'lucide-react'
+import handsImg from '../assets/parceiros/hands.avif'
 
 export function Hero() {
   return (
@@ -53,7 +54,7 @@ export function Hero() {
           <div className="relative">
             <div className="overflow-hidden rounded-[8px] border border-slate-200/60 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
               <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800"
+                src={handsImg}
                 alt="Governança técnica"
                 className="h-[400px] w-full object-cover lg:h-[480px]"
               />
