@@ -4,14 +4,21 @@ const imageModules = import.meta.glob<{ default: string }>(
   { eager: true }
 )
 
-const parceirosRaw = Object.entries(imageModules).map(([path, mod]) => {
-  const fileName = path.replace(/^.*[\\/]/, '').replace(/\.[^.]+$/, '')
-  const alt = fileName
-    .replace(/[-_]/g, ' ')
-    .replace(/\d+$/, '')
-    .trim() || 'Parceiro'
-  return { src: mod.default, alt, fileName: fileName.toLowerCase() }
-})
+const parceirosRaw = Object.entries(imageModules)
+  .map(([path, mod]) => {
+    const fileName = path.replace(/^.*[\\/]/, '').replace(/\.[^.]+$/, '')
+    const alt = fileName
+      .replace(/[-_]/g, ' ')
+      .replace(/\d+$/, '')
+      .trim() || 'Parceiro'
+    return { src: mod.default, alt, fileName: fileName.toLowerCase() }
+  })
+  .filter(
+    (p) =>
+      !p.fileName.includes('imgcortada') &&
+      !p.fileName.includes('depositphotos') &&
+      !p.fileName.includes('image_fx')
+  )
 
 const parceirosSorted = [...parceirosRaw].sort((a, b) => {
   if (a.fileName === 'download') return -1
@@ -31,15 +38,15 @@ if (idxNacional >= 0 && idxBTB >= 0) {
 
 export function Parceiros() {
   return (
-    <section id="empresas" className="bg-[#F8FAFC] py-20">
+    <section id="empresas" className="bg-white py-12">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-[#1e293b] md:text-4xl">
+        <h2 className="mb-4 text-center text-3xl font-bold text-slate-800 md:text-4xl">
           Empresas que Acreditam na CCA
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-center text-[#1e293b]/80">
+        <p className="mx-auto mb-8 max-w-3xl text-center text-base text-slate-600">
           Empresas que confiam na CCA para governança técnica do ativo construído.
         </p>
-        <div className="mt-16 mx-auto max-w-4xl flex flex-wrap items-center justify-center gap-4 rounded-[8px] border border-slate-200/80 bg-white p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)] md:gap-6 lg:gap-8 lg:p-10">
+        <div className="mx-auto max-w-4xl flex flex-wrap items-center justify-center gap-4 rounded-xl bg-[#F7F8FC] p-8 shadow-[0_2px_12px_rgba(0,0,0,0.06)] md:gap-6 lg:gap-8 lg:p-10">
           {parceiros.map((parceiro) => {
             const isNacionalGas = parceiro.fileName.includes('nacional-gas')
             const isOasis = parceiro.fileName.includes('oasis-logo')

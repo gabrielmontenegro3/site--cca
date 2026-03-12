@@ -35,23 +35,23 @@ const contextos = [
 
 export function OndeAtuamos() {
   return (
-    <section id="onde-atuamos" className="bg-[#F8FAFC] py-20">
+    <section id="onde-atuamos" className="bg-white py-12">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-[#1e293b] md:text-4xl">
+        <h2 className="mb-4 text-center text-3xl font-bold text-slate-800 md:text-4xl">
           Onde a CCA Atua
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-[#1e293b]/80">
+        <p className="mx-auto mb-8 max-w-3xl text-center text-base text-slate-600">
           Atuação aplicada às fases de produção, garantia e operação do ativo - desde a obra até indústria em operação.
         </p>
-        <div className="mt-16 space-y-10">
+        <div className="space-y-6">
           {contextos.map((ctx) => (
             <div
               key={ctx.id}
-              className="rounded-[8px] border border-slate-200/80 bg-white p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)] md:p-10"
+              className="rounded-xl bg-[#F7F8FC] p-8 shadow-[0_2px_12px_rgba(0,0,0,0.06)] md:p-10"
             >
               <div className="flex flex-wrap items-start gap-6">
                 <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[8px] bg-[#137FEC]">
-                  <ctx.icon className="h-7 w-7 text-white" />
+                  <ctx.icon className="h-7 w-7 stroke-[1.5] text-white" />
                 </div>
                 <div className="min-w-0 flex-1 text-left md:text-justify">
                   <h3 className="text-xl font-bold text-[#1e293b]">{ctx.title}</h3>
@@ -79,7 +79,7 @@ export function OndeAtuamos() {
                           key={h}
                           className="inline-flex items-center gap-2 rounded-[8px] bg-[#137FEC]/10 px-3 py-1.5 text-sm font-medium text-[#137FEC]"
                         >
-                          <Check className="h-4 w-4" />
+                          <Check className="h-4 w-4 stroke-[1.5]" />
                           {h}
                         </span>
                       ))}

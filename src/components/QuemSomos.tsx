@@ -1,12 +1,12 @@
 export function QuemSomos() {
   return (
-    <section id="quem-somos" className="bg-[#F8FAFC] py-20">
+    <section id="quem-somos" className="bg-white py-12">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-[8px] border border-slate-200/80 bg-white p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)] md:p-12">
-          <h2 className="text-3xl font-bold tracking-tight text-[#1e293b]">
+        <div className="rounded-xl bg-[#F7F8FC] p-8 shadow-[0_2px_12px_rgba(0,0,0,0.06)] md:p-12">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-800">
             Quem é a <span className="text-[#137FEC]">CCA</span>
           </h2>
-          <div className="mt-8 space-y-6 text-[#1e293b]/90 leading-relaxed md:text-justify">
+          <div className="mt-6 space-y-4 text-[#1e293b]/90 leading-relaxed md:text-justify">
             <p>
               A CCA é uma empresa especializada na estruturação técnica da informação produzida ao longo do ciclo de vida do ativo construído. Há 8 anos no mercado, atua na inspeção e reabilitação de sistemas e subsistemas construtivos em empreendimentos prediais e industriais, com foco no desempenho técnico, na rastreabilidade das condições construtivas e na verificação de responsabilidades ao longo do tempo.
             </p>

@@ -12,15 +12,15 @@ const cards = [
 
 export function NiveisGovernanca() {
   return (
-    <section id="niveis" className="bg-slate-900 py-20">
+    <section id="niveis" className="bg-slate-900 py-12">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-12 text-center text-3xl font-bold text-white">
+        <h2 className="mb-6 text-center text-3xl font-bold text-white">
           Níveis de Governança
         </h2>
-        <p className="mx-auto mb-16 max-w-3xl text-center text-slate-300">
+        <p className="mx-auto mb-8 max-w-3xl text-center text-slate-300">
           Representam o grau de profundidade, controle e integração aplicado à atuação técnica, variando conforme:
         </p>
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           {cards.map((card) => (
             <div
               key={card.title}

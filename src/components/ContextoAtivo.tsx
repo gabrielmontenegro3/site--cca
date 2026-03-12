@@ -39,16 +39,16 @@ const cards = [
 
 export function ContextoAtivo() {
   return (
-    <section id="contexto" className="bg-[#F8FAFC] py-20">
+    <section id="contexto" className="bg-[#F8FAFC] py-12">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
-        <div className="grid items-start gap-16 lg:grid-cols-2">
+        <div className="grid items-start gap-10 lg:grid-cols-2">
           <div className="grid grid-cols-2 gap-4">
             {cards.map((card) => (
               <div
                 key={card.title}
-                className="rounded-[8px] border border-slate-200/80 bg-white p-6 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
+                className="flex flex-col items-center rounded-xl bg-[#F7F8FC] p-6 text-center shadow-[0_2px_12px_rgba(0,0,0,0.06)]"
               >
-                <div className="mb-4">{card.icon}</div>
+                <div className="mb-4 flex items-center justify-center">{card.icon}</div>
                 <h3 className="font-bold text-[#1e293b]">{card.title}</h3>
                 <p className="mt-2 text-sm text-[#1e293b]/80">{card.description}</p>
               </div>
@@ -59,10 +59,10 @@ export function ContextoAtivo() {
               Contexto do{' '}
               <span className="text-[#137FEC]">Ativo Industrial</span>
             </h2>
-            <p className="mt-6 text-[#1e293b]/80">
+            <p className="mt-4 text-[#1e293b]/80">
               Ativos industriais enfrentam exposição contínua a variáveis críticas que impactam diretamente a integridade funcional.
             </p>
-            <ul className="mt-8 space-y-4">
+            <ul className="mt-6 space-y-3">
               {[
                 'Monitoramento da degradação em sistemas com prazos não programados.',
                 'Análise de risco baseada em dados reais de exposição operacional.',

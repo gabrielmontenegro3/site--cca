@@ -2,18 +2,18 @@ import { ArrowRight } from 'lucide-react'
 
 export function HeroIndustrial() {
   return (
-    <section className="bg-[#F8FAFC] py-16 lg:py-24">
+    <section className="bg-[#F8FAFC] py-10 lg:py-14">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_1fr]">
+        <div className="grid items-center gap-8 lg:grid-cols-[1.2fr_1fr]">
           <div>
             <span className="inline-block rounded-[8px] bg-[#137FEC]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#137FEC]">
               Programas de Diagnóstica Avançada
             </span>
-            <h1 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-[#1e293b] md:text-5xl">
+            <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-[#1e293b] md:text-5xl">
               Integridade do Ativo Construído em{' '}
               <span className="text-[#137FEC]">Ambiente Industrial.</span>
             </h1>
-            <p className="mt-5 text-lg text-[#1e293b]/90">
+            <p className="mt-4 text-lg text-[#1e293b]/90">
               Inspeção, Diagnóstico e Prognóstico Técnico de Sistemas Construtivos em Operação.
             </p>
             <p className="mt-3 text-[#1e293b]/80">
@@ -21,10 +21,10 @@ export function HeroIndustrial() {
             </p>
             <a
               href="#metodologia-reabilitacao"
-              className="mt-10 inline-flex items-center gap-2 rounded-[8px] bg-[#137FEC] px-8 py-4 font-semibold text-white shadow-[0_2px_12px_rgba(19,127,236,0.35)] transition hover:opacity-90"
+              className="mt-6 inline-flex items-center gap-2 rounded-[8px] bg-[#137FEC] px-8 py-4 font-semibold text-white shadow-[0_2px_12px_rgba(19,127,236,0.35)] transition hover:opacity-90"
             >
               Conhecer Metodologia de Atuação
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="h-5 w-5 stroke-[1.5]" />
             </a>
           </div>
           <div className="relative">

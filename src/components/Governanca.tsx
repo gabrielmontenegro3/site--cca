@@ -1,10 +1,10 @@
-import { BarChart3, Link2, AlertTriangle } from 'lucide-react'
+import { BarChart2, Link2, AlertCircle } from 'lucide-react'
 
 const features = [
   {
     title: 'Suporte à Tomada de Decisão',
     description: 'Informação técnica estruturada para qualificar decisões de manutenção, reabilitação e gestão do ativo.',
-    icon: BarChart3,
+    icon: BarChart2,
   },
   {
     title: 'Integração Diagnóstica',
@@ -14,25 +14,25 @@ const features = [
   {
     title: 'Priorização de Intervenções',
     description: 'Escalonamento técnico da atuação com base em criticidade e impacto operacional.',
-    icon: AlertTriangle,
+    icon: AlertCircle,
   },
 ]
 
 export function Governanca() {
   return (
-    <section id="governanca" className="bg-[#0F172A] py-20">
+    <section id="governanca" className="bg-[#0F172A] py-12">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-16 lg:grid-cols-2">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
               Governança Técnica do{' '}
               <span className="text-[#137FEC]">Ativo Construído</span>
             </h2>
-            <div className="mt-10 space-y-8">
+            <div className="mt-6 space-y-6">
               {features.map((feature) => (
                 <div key={feature.title} className="flex gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[8px] bg-[#137FEC]">
-                    <feature.icon className="h-6 w-6 text-white" />
+                    <feature.icon className="h-6 w-6 stroke-[1.5] text-white" />
                   </div>
                   <div>
                     <h3 className="font-bold text-white">{feature.title}</h3>

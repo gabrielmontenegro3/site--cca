@@ -1,14 +1,14 @@
 export function EmpresasAcreditam() {
   return (
-    <section id="empresas" className="bg-[#F8FAFC] py-20">
+    <section id="empresas" className="bg-white py-12">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-[#1e293b] md:text-4xl">
+        <h2 className="mb-4 text-center text-3xl font-bold text-slate-800 md:text-4xl">
           Empresas que Acreditam na CCA
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-center text-[#1e293b]/80">
+        <p className="mx-auto mb-8 max-w-3xl text-center text-base text-slate-600">
           Empresas que confiam na CCA para governança técnica do ativo construído.
         </p>
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-12 rounded-[8px] border border-slate-200/80 border-dashed bg-white p-12 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+        <div className="flex flex-wrap items-center justify-center gap-8 rounded-xl bg-[#F7F8FC] p-8 shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
           <p className="text-center text-slate-500">
             Inserir logos das empresas parceiras
           </p>
