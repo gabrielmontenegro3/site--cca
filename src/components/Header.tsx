@@ -45,7 +45,7 @@ export function Header({ siteMode, onSiteModeChange }: HeaderProps) {
             />
           </a>
           <div className="flex min-w-0 flex-1 items-center justify-end gap-3 lg:gap-5">
-            <div className="flex items-center gap-3 overflow-x-auto lg:gap-5 scrollbar-none [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            <div className="hidden items-center gap-3 overflow-x-auto lg:flex lg:gap-5 scrollbar-none [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
